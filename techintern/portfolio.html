@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+</head>
+<body>
+<header>
+<div class="logo">
+<h1>My Portfolio</h1>
+</div>
+<nav>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+<div class="social-icons">
+<a href="#"><i class="fab fa-twitter"></i></a>
+<a href="#"><i class="fab fa-facebook"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+</div>
+</header>
+<section id="about">
+<h2>About Me</h2>
+<p>Hello Everyone, This is Shashank Sahay here and this is my portfolio. I
+am currently a third year engineering student in computer science &
+engineering.
+</p>
+<ul>
+<li>Name: Shashank Sahay</li>
+<li>Location: Durgapur, West Bengal</li>
+<li>Skills: HTML, CSS, Java,C,C++,PYTHON</li>
+<li>Experience: 2 years</li>
+</ul>
+</section>
+<section id="projects">
+<h2>My Projects</h2>
+<div class="project">
+<img src="project-1.jpg" alt="Project 1">
+<h3>Project 1</h3>
+
+<p>Completed a responsive calculator app using html,css</p>
+</div>
+<div class="project">
+<img src="project-2.jpg" alt="Project 2">
+<h3>Project 2</h3>
+<p>Completed a tribute page using html,css, js</p>
+</div>
+<div class="project">
+<img src="project-3.jpg" alt="Project 3">
+<h3>Project 3</h3>
+<p>completed a todo web app using web development</p>
+</div>
+</section>
+<section id="contact">
+<h2>Contact Me</h2>
+<form>
+<label for="name">Name:</label>
+<input type="text" id="name" name="name">
+<label for="email">Email:</label>
+<input type="email" id="email" name="email">
+<label for="message">Message:</label>
+<textarea id="message" name="message"></textarea>
+<button type="submit">Send</button>
+</form>
+</section>
+<footer>
+<p >&copy; 2023 SHASHANK SAHAY. All rights reserved.</p>
+<a target=_new href="myportfolio.pdf" download="myportfolio.pdf"><b>Download
+my portfolio</b> </a> </footer>
+<div class="feedback">
+<h3>Feedback</h3>
+<p>How was your experience?</p>
+<div class="rating">
+<input type="radio" name="rating" id="star1" value="1">
+<label for="star1"><i class="fas fa-star"></i></label>
+<input type="radio" name="rating" id="star2" value="2">
+<label for="star2"><i class="fas fa-star"></i></label>
+<input type="radio" name="rating" id="star3" value="3">
+<label for="star3"><i class="fas fa-star"></i></label>
+<input type="radio" name="rating" id="star4" value="4">
+<label for="star4"><i class="fas fa-star"></i></label>
+<input type="radio" name="rating" id="star5" value="5">
+<label for="star5"><i class="fas fa-star"></i></label>
+</div>
+<textarea placeholder="Enter your feedback here"></textarea>
+<button>Submit</button>
+</div>
+
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
+<style>
+/* Global styles */
+body {
+font-family: Arial, sans-serif;
+font-size: 16px;
+line-height: 1.
+}
+/* Header styles */
+header {
+background-color: #333;
+color: #fff;
+padding: 20px;
+}
+header h1 {
+margin: 0;
+}
+header ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+header li {
+display: inline-block;
+margin-right: 20px;
+}
+header li:last-of-type {
+margin-right: 0;
+}
+header a {
+color: #fff;
+text-decoration: none;
+}
+/* About section styles */
+#about {
+padding: 50px;
+}
+#about h2 {
+
+margin-top: 0;
+}
+#about ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+#about li {
+margin-bottom: 10px;
+}
+/* Project section styles */
+#projects {
+padding: 50px;
+}
+#projects h2 {
+margin-top: 0;
+}
+.project {
+display: flex;
+margin-bottom: 50px;
+}
+.project img {
+width: 200px;
+height: 150px;
+margin-right: 20px;
+}
+.project h3 {
+margin: 0;
+}
+/* Contact section styles */
+#contact {
+padding: 50px;
+}
+#contact h2 {
+margin-top: 0;
+}
+form {
+display: flex;
+
+flex-direction: column;
+max-width: 500px;
+}
+form label {
+margin-bottom: 10px;
+}
+form input,
+form textarea {
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+margin-bottom: 20px;
+}
+form button {
+background-color: #333;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+/* Footer styles */
+footer {
+background-color: #333;
+color: #fff;
+padding: 50px;
+display: flex;
+justify-content: space-between;
+}
+footer .download-resume a {
+color: #fff;
+text-decoration: none;
+border: 1px solid #fff;
+padding: 10px 20px;
+border-radius: 5px;
+}
+footer .feedback {
+max-width: 500px;
+}
+footer .feedback h3 {
+margin-top: 0;
+
+}
+footer .feedback p {
+margin-bottom: 10px;
+}
+footer .feedback textarea {
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+margin-bottom: 20px;
+}
+footer .feedback button {
+background-color: #333;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+/* Media queries */
+@media screen and (max-width: 768px) {
+header li {
+display: block;
+margin-right: 0;
+margin-bottom: 10px;
+}
+.project {
+flex-direction: column;
+align-items: center;
+}
+.project img {
+margin-right: 0;
+margin-bottom: 20px;
+}
+footer {
+flex-direction: column;
+align-items: center;
+}
+footer .feedback {
+max-width: none;
+text-align: center;
+
+}
+}
+</style>
